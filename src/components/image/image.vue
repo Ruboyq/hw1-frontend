@@ -77,7 +77,7 @@ export default {
       src: "",
       imgBase64: "",
       acceptFile: ".jpg,.png",
-      uploadUrl: "http://localhost:8080/image/insert",
+      uploadUrl: "http://10.0.0.129:8080/image/insert",
       uploadHeaders: {},
       uploadData: {},
       fileList: [],
@@ -112,7 +112,7 @@ export default {
       console.log(err);
     },
     submitUpload() {
-      this.uploadUrl = "http://localhost:8080/image/insert";
+      this.uploadUrl = "http://10.0.0.129:8080/image/insert";
       this.$refs.thesisUpload.submit();
     },
     getImage() {
